@@ -917,3 +917,86 @@ footer a:hover {
     margin-top: 2px;
   }
 }
+/* =========================================================================
+   MOBILE FIXES — Align header + fix hero overflow
+   ========================================================================= */
+@media (max-width: 900px) {
+
+  /* TOPBAR FIX */
+  .topbar {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .powered-wrap span {
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+  .logo-vivamo {
+    height: 20px;
+    width: auto;
+    margin-top: 2px;
+  }
+
+
+  /* HERO FIX (TEXT CUT + ALIGNMENT) */
+  .hero-inner {
+    flex-direction: column;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    width: auto;
+  }
+
+  /* HERO IMAGE FIX */
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
