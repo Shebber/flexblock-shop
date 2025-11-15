@@ -400,9 +400,23 @@ async function verifyOwnership() {
       <h3>Payment</h3>
       <p className="sub">Send APE to complete your order.</p>
 
-      <PayButton
-        recipient={process.env.NEXT_PUBLIC_RECIPIENT_ADDRESS}
-      />
+      <button
+  disabled
+  style={{
+    opacity: 0.4,
+    cursor: "not-allowed",
+    padding: "12px 18px",
+    background: "#222",
+    color: "#666",
+    borderRadius: "10px",
+    border: "1px solid #333",
+    fontSize: "16px",
+    marginTop: "10px"
+  }}
+>
+  Checkout temporarily disabled
+</button>
+
     </div>
   </div>
 )}
