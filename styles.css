@@ -887,3 +887,33 @@ footer a:hover {
     animation-duration: 25s;
   }
 }
+/* ============================
+   MOBILE HEADER FIX (Vivamo)
+============================ */
+@media (max-width: 900px) {
+  .topbar {
+    padding: 20px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+
+  .powered-wrap {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.1;
+  }
+
+  .logo-vivamo {
+    height: 22px;       /* kleiner = perfektes Mobile-Scale */
+    margin-top: 2px;
+  }
+}
